@@ -1,10 +1,15 @@
-
-
-  
-  
- html {
+html {
      font-family: Helvetica;
  }
+
+ body {
+     margin: 0px;
+ }
+
+ img {
+  max-width: 100%;
+  max-height: 100%;
+}
  
  
  /* Header */
@@ -51,5 +56,47 @@
     text-decoration: none;
     font-size: 20px;
   }
+
+  /* Join section*/
+  #main {
+      display: flex;
+      position: absolute;
+      top: 64px;
+      background-color: #D8D8D8;
+      width: 100%;
+      align-items: center;
+  }
   
+  .image-container {
+      padding: 32px 24px 32px 24px;
+      width: 55%
+
+  }
+
+  .header {
+      color: #4a4a4a;
+      justify-content: flex-start;
+      align-items: center;
+      width: 30%;
+      padding-left: 24px;
+  }
+
+  .header .title {
+      font-weight: bold;
+      font-size: 50px;
+  }
+
+  .header .lorem {
+    font-size: 24px;
+  }
+
+  .header .button {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 8px 0 8px 0;
+    border-radius: 
+  }
+
+ 
   
