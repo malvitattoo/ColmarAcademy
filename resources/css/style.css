@@ -4,18 +4,24 @@ html {
 
  body {
      margin: 0px;
+     display: flex;
+     flex-direction: column;
+     color: #4A4A4A;
  }
 
- img {
-  max-width: 100%;
-  max-height: 100%;
+ a {
+  color: #4A4A4A;
+  text-decoration: none;
 }
+
+ 
  
  
  /* Header */
   
   header {
     position: fixed;
+    position: sticky;
     width: 100%;
     border-bottom: solid 1px #c6c1c1;
     background-color: white;
@@ -31,7 +37,7 @@ html {
   
   header .logo {
     flex: 1;
-    font-size: 28px; /*specs values looks different, so I used my own ones*/
+    font-size: 28px; 
   }
   
   header nav ul {
@@ -46,39 +52,40 @@ html {
     vertical-align: bottom;
     line-height: 1.6;
     color: #4a4a4a;
+    font-size: 20px;
+    
   }
   ol, ul {
     list-style: none;
   }
 
-  a {
-    color: #4A4A4A;
-    text-decoration: none;
-    font-size: 20px;
-  }
-
   /* Join section*/
   #main {
       display: flex;
-      position: absolute;
       top: 64px;
       background-color: #D8D8D8;
       width: 100%;
       align-items: center;
   }
   
-  .image-container {
-      padding: 32px 24px 32px 24px;
-      width: 55%
+.main-left {
+  width: 60%;
+}
 
+  #main .image-container  {
+      padding: 32px 24px 32px 24px;
+      
+  }
+
+  #main .image-container img {
+      max-width: 100%;
+      max-height: 100%;
   }
 
   .header {
-      color: #4a4a4a;
       justify-content: flex-start;
       align-items: center;
       width: 30%;
-      padding-left: 24px;
   }
 
   .header .title {
@@ -95,8 +102,102 @@ html {
     color: white;
     text-align: center;
     padding: 8px 0 8px 0;
-    border-radius: 
   }
 
+   /* Info section*/
+
+   #info {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   
+
+   .quote-container {
+     width: 60%;
+     border-right: 3px #CDCDCD;
+     display: flex;
+     flex-direction: column;
+   }
+
+   .quote-container .image-container {
+    padding: 32px 24px;
+   }
+
+   .quote-container img {
+    max-width: 100%;
+    max-height: 100%;
+   }
+
+   .bottom {
+    padding: 0 24px 32px 24px;
+   }
+
+   p.title {
+     font-weight: 900;
+     font-size: 42px;
+     margin: 0px;
+   }
+
+   p.quote {
+    line-height: 1.6;
+   }
+
+   p.author {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     font-size: 14px;
+   }
+
+   a p.author {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+   }
+/*right side of INFO*/
+
+   .info-list {
+     display: flex;
+     flex-direction: column;
+     width: 40%;
+     padding-top: 34px;
+     border-left: 1px #4A4A4A;
+     justify-content: space-between;
+   }
+
+   .info-content {
+     width: 65%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding-left: 16px;
+     
+   }
+
+   .info-orientation {
+     display: flex;
+     justify-content: flex-start;
+   }
+
+
+   .info-guest {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #c6c1c1;
+   }
+
+   .orientation-img {
+     width: 35%;
+     padding: 16px;
+   }
+
+   .orientation-img img {
+    max-width:100%;
+    max-height: auto;
+   }
+
+   .info-content a  {
+     color: blue;
+   }
+
  
-  
