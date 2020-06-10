@@ -207,7 +207,7 @@ html {
    background-color: #EAEBEC;
  }
 
- #course h1  {
+ #course h2  {
    text-align: center;
    font-weight: 900;
  }
@@ -250,4 +250,43 @@ p.middle {
 p.bottom {
 padding: 0%;
 }
+
+/*VIDEO SECTION*/
+
+#video {
+  background-color: #F3F5F5;
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+}
+
+
+.video-left {
+  width: 60%;
+  margin-left: 70px;
+  
+}
+
+.top-container {
+  width: 100%;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.video-info-list {
+    display: flex;
+     flex-direction: column;
+     width: 40%;
+     padding-top: 34px;
+
+}
+
+
 
