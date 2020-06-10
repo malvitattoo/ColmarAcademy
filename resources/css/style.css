@@ -200,4 +200,54 @@ html {
      color: blue;
    }
 
- 
+ /*Courses section*/
+
+ #course {
+   width: 100%;
+   background-color: #EAEBEC;
+ }
+
+ #course h1  {
+   text-align: center;
+   font-weight: 900;
+ }
+
+.all-course-container {
+  margin: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+.course-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  width: 30%;
+}
+
+.course-content {
+  padding: 16px;
+  text-align: left;
+}
+
+.course-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p.top {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+p.middle {
+
+}
+
+p.bottom {
+padding: 0%;
+}
+
