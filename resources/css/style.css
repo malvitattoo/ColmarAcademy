@@ -289,4 +289,28 @@ video {
 }
 
 
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #c6c1c1;
+  height: 100px;
+  background-color: #F3F5F5;
+}
 
+.footer-content {
+  padding-top: 24px;
+  padding-left: 16px;
+  
+}
+
+.footer-links {
+  padding-top: 24px;
+  padding-right: 16px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+a.footer-links {
+  padding-right: 16px;
+}
