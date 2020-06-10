@@ -14,6 +14,24 @@ html {
   text-decoration: none;
 }
 
+h1 {
+  font-weight: 900;
+  font-size: 42px;
+  padding: 32px 0px;
+  text-align: center;
+  background-color: #EAEBEC;
+  margin: 0px;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  line-height: 1.6;
+  color: #4A4A4A;
+}
+
  
  
  
@@ -31,7 +49,7 @@ html {
   header .content {
     display: flex;
     align-items: center;
-    padding: 0 24px 0 24px;
+    padding: 0 24px;
     height: 64px;
   }
   
@@ -104,6 +122,16 @@ html {
     padding: 8px 0 8px 0;
   }
 
+  h1.title {
+    text-align: left;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  h2.lorem {
+    padding: 24px 0;
+  }
+
    /* Info section*/
 
    #info {
@@ -119,6 +147,7 @@ html {
      border-right: 3px #CDCDCD;
      display: flex;
      flex-direction: column;
+     border-right: solid 1px #c6c1c1;
    }
 
    .quote-container .image-container {
@@ -134,15 +163,12 @@ html {
     padding: 0 24px 32px 24px;
    }
 
-   p.title {
-     font-weight: 900;
-     font-size: 42px;
-     margin: 0px;
+   .bottom h1 {
+     text-align: left;
+     background: white;
+     padding: 0;
    }
 
-   p.quote {
-    line-height: 1.6;
-   }
 
    p.author {
      font-family: Arial, Helvetica, sans-serif;
@@ -154,29 +180,40 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
    }
+
+   p.bottom {
+     color: #A2A4A4;
+   }
 /*right side of INFO*/
 
    .info-list {
      display: flex;
      flex-direction: column;
-     width: 40%;
-     padding-top: 34px;
+     width: 39%;
+     padding-top: 18px;
      border-left: 1px #4A4A4A;
-     justify-content: space-between;
+     justify-content: flex-start;
    }
 
    .info-content {
-     width: 65%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     padding-left: 16px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32px 0 0px;
      
    }
 
    .info-orientation {
      display: flex;
      justify-content: flex-start;
+     border-bottom: solid 1px #c6c1c1;
+   }
+
+   .info-campus {
+    display: flex;
+    justify-content: flex-start;
+    border-top: solid 1px #c6c1c1;
    }
 
 
@@ -213,10 +250,10 @@ html {
  }
 
 .all-course-container {
-  margin: 72px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start ;
+  padding: 0 60px 32px 60px;
 }
 
 
@@ -224,12 +261,12 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin: 24px;
+  margin: 0 12px 24px 12px;
   width: 30%;
 }
 
 .course-content {
-  padding: 16px;
+  padding: 16px 16px 24px 16px;
   text-align: left;
 }
 
@@ -241,27 +278,30 @@ html {
 p.top {
   font-weight: bold;
   font-size: 32px;
+  margin: 0;
 }
 
 p.middle {
-
+  margin: 0;
+  padding: 8px 0px;
 }
 
 p.bottom {
-padding: 0%;
+padding: 0;
+margin: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*VIDEO SECTION*/
+
+h1.thesis {
+  background-color: #F3F5F5;
+}
 
 #video {
   background-color: #F3F5F5;
   display: flex;
   flex-direction: row;
-}
-
-h1 {
-  text-align: center;
-  font-weight: 900;
 }
 
 
@@ -284,10 +324,20 @@ video {
     display: flex;
      flex-direction: column;
      width: 40%;
-     padding-top: 34px;
+     padding-left: 24px;
 
 }
 
+.info-fisma {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #D8D8D8;
+}
+
+  .info-ny {
+    display: flex;
+    justify-content: flex-start;
+  }
 
 /*FOOTER*/
 footer {
@@ -314,3 +364,5 @@ footer {
 a.footer-links {
   padding-right: 16px;
 }
+
+
