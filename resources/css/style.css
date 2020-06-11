@@ -275,12 +275,6 @@ p {
   max-height: 100%;
 }
 
-p.top {
-  font-weight: bold;
-  font-size: 32px;
-  margin: 0;
-}
-
 p.middle {
   margin: 0;
   padding: 8px 0px;
@@ -307,12 +301,13 @@ h1.thesis {
 
 .video-left {
   width: 60%;
-  margin-left: 70px;
+  margin-left: 24px;
   
 }
 
 .top-container {
   width: 100%;
+  padding-bottom: 24px;
 }
 
 video {
@@ -339,6 +334,14 @@ video {
     justify-content: flex-start;
   }
 
+  p.quote {
+    padding-top: 8px;
+  }
+
+  .bottom {
+    padding-bottom: 16px;
+  }
+
 /*FOOTER*/
 footer {
   display: flex;
@@ -348,21 +351,15 @@ footer {
   background-color: #F3F5F5;
 }
 
-.footer-content {
-  padding-top: 24px;
-  padding-left: 16px;
+.footer-content p {
+  padding-left: 24px;
   
 }
 
 .footer-links {
-  padding-top: 24px;
-  padding-right: 16px;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  padding-right: 24px;
+  padding-top: 16px;
 }
 
-a.footer-links {
-  padding-right: 16px;
-}
 
 
