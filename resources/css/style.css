@@ -42,6 +42,11 @@ img {
   max-height: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
 /* Header */
   
 header {
@@ -51,6 +56,7 @@ header {
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
   z-index: 2;
+  height: 64px;
 }
   
 header .content {
@@ -82,6 +88,23 @@ nav a {
 
 ol, ul {
 list-style: none;
+}
+
+@media only screen and (min-width: 601px) {
+  .content li img {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content a {
+    display: none;
+    width: 100%;
+  }
+
+  .content img {
+    height: 35px;
+  }
 }
 
 /* Join section*/
@@ -132,6 +155,40 @@ h1.title {
 
 h2.lorem {
   padding: 24px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
+  #main .image-container {
+    width: 100%;
+    padding: 0;
+  }
+  .main-left {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .header {
+    width: 100%;
+    padding: 0;
+  }
+  .header .title {
+    font-size: 36px;
+    padding: 16px 32px;
+  }
+  h2.lorem {
+    padding: 16px 32px;
+  }
+   .header .button {
+    margin: 12px 90px;
+    padding: 16px 0;
+    color: white;
+    background-color: #9B9B9B;
+  }
+  .
 }
 
 /* Info section*/
@@ -225,6 +282,33 @@ p.bottom {
 .info-content a  {
   color: blue;
 }
+@media only screen and (min-width: 601px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .quote-container {
+    display: none;
+  }
+  .info-list {
+    width: 100%;
+    background-color: #F3F5F5;
+  }
+  .info-orientation, .info-campus, .info-guest {
+    flex-direction: column;
+  }
+  .orientation-img .desktop {
+    display: none;
+  }
+  .orientation-img {
+    width: 100%
+  }
+  .info-content {
+    padding: 0 32px 32px;
+  }
+}
 
  /*Courses section*/
 
@@ -268,6 +352,24 @@ p.bottom {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+  .all-course-container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .course-container img, .middle, .bottom  {
+    display: none;
+  }
+  .course-container {
+    width: 100%;
+    background-color: #D8D8D8;
+  }
+  h1 {
+    border-top: 1px #4A4A4A;
+  }
+}
+
 
 /*VIDEO SECTION*/
 
@@ -317,6 +419,18 @@ p.quote {
   padding-bottom: 16px;
 }
 
+@media only screen and (max-width: 600px) {
+  #video {
+    flex-direction: column;
+  }
+  .video-left {
+    width: 100%;
+  }
+  .video-info-list {
+    display: none;
+  }
+  }
+
 /*FOOTER*/
 
 footer {
@@ -334,4 +448,10 @@ footer {
 .footer-links {
   padding-right: 24px;
   padding-top: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-links {
+    display: none;
+  }
 }
